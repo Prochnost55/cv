@@ -1,49 +1,29 @@
-
 body{
   text-align: center;
+  padding:0;
   margin:0;
+  box-sizing: border-box;
+  width:100%;
   color: #40514E;
-  /* background-color: #dcd6f7; */
   font-family: 'Montserrat', sans-serif;
 }
+
+/* top section */
+
 .top-container{
   padding-top:100px;
   background-color: #EAF6F6;
 }
-.bottom-container{
-  padding:40px 0 20px 0;
-  background-color: #EAF6F6;
-  color: #66BFBF;
-  line-height: 2;
+.upper-cloud{
+  position: absolute;
+  right:20%;
 }
-.footer-link{
-  text-decoration: none;
-  padding:25px;
-  color:#11999E
-}
-.subtitle{
-  font-weight: normal;
-  margin:50px;
-}
-.profile_description{
-  color:#40514E;
-  width:30%;
-  margin:0 auto;
-  line-height: 2;
-}
-hr{
-  border-style: none;
-  border-top-style: dotted;
-  border-width: 5px;
-  color:#EAF6F6;
-  width: 4%;
-  margin: 30px auto;
-}
-.profile,.skills{
-  padding: 50px;
+.lower-cloud{
+  position: absolute;
+  left: 15%;
 }
 h1{
-  font-size: 5.625rem; /* 1rem = 16px */
+  font-size: 5.625rem;
   font-family: 'Sacramento', cursive;
   margin:50px auto 0 auto;
   color:#66BFBF;
@@ -54,20 +34,47 @@ h2{
   margin:20px auto;
   font-family: 'Dosis', sans-serif;
 }
-h3{
-  font-family: 'Dosis', sans-serif;
-  color:#11999E;
+.subtitle{
+  font-weight: normal;
+  margin:50px;
 }
-a{
-  color:#11999E;
-}
-a:hover{
-  color:blue;
+/* profile section */
+.profile{
+  margin:50px auto;
+
 }
 .profile_pic{
   height: 150px;
   width:150px
 }
+
+.profile_description{
+  color:#40514E;
+  margin:0 auto;
+  line-height: 2;
+}
+
+hr{
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 5px;
+  color:#EAF6F6;
+  width: 6%;
+  margin: 30px auto;
+}
+
+/* skills section */
+
+.skills{
+  margin:50px auto;
+
+}
+.skill-row{
+  margin:50px auto 50px auto;
+  text-align: left;
+  line-height: 2;
+}
+
 .icon1{
   height: 120px;
   width:25%;
@@ -81,34 +88,15 @@ a:hover{
   margin-left:30px;
 }
 
-.upper-cloud{
-  position: absolute;
-  right:20%;
-}
-.skill-row{
-  width: 50%;
-  margin:50px auto 50px auto;
-  text-align: left;
-  line-height: 2;
-}
+/* contact */
+
 .contact-me{
-  width: 50%;
-  margin:50px auto 50px auto;
+  margin:50px auto;
   line-height: 2;
 }
 .contact_msg{
-  width:50%;
   margin:30px auto 50px auto;
 }
-.lower-cloud{
-  position: absolute;
-}
-.copyright{
-  font-size: 0.75rem;
-  margin-top: 50px;
-}
-
-
 .btn {
 	box-shadow: 0px 6px 14px -7px #276873;
 	background:linear-gradient(to bottom, #599bb3 5%, #39a0b0 100%);
@@ -131,4 +119,36 @@ a:hover{
 .btn:active {
 	position:relative;
 	top:1px;
+}
+
+/* footer */
+
+.bottom-container{
+  padding:40px 0 20px 0;
+  background-color: #EAF6F6;
+  color: #66BFBF;
+  line-height: 2;
+}
+.footer-link{
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding:25px;
+  color:#11999E
+}
+
+
+h3{
+  font-family: 'Dosis', sans-serif;
+  color:#11999E;
+}
+a{
+  color:#11999E;
+}
+a:hover{
+  color:blue;
+}
+
+.copyright{
+  font-size: 0.75rem;
+  margin-top: 50px;
 }
